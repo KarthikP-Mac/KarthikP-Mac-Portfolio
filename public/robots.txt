@@ -1,0 +1,15 @@
+# robots.txt for https://karthik-p-mac-portfolio.vercel.app/
+# Allow all crawlers (including Googlebot) to index everything
+
+User-agent: *
+Allow: /
+
+# Explicitly allow favicon and assets for Google favicon indexing
+Allow: /favicon.ico
+Allow: /favicon.png
+Allow: /favicon-32x32.png
+Allow: /favicon-16x16.png
+Allow: /apple-touch-icon.png
+
+# Sitemap location
+Sitemap: https://karthik-p-mac-portfolio.vercel.app/sitemap.xml
