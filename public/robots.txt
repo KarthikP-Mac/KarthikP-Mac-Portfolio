@@ -7,6 +7,8 @@ Allow: /
 # Explicitly allow favicon and assets for Google favicon indexing
 Allow: /favicon.ico
 Allow: /favicon.png
+Allow: /favicon-48x48.png
+Allow: /favicon-96x96.png
 Allow: /favicon-32x32.png
 Allow: /favicon-16x16.png
 Allow: /apple-touch-icon.png

@@ -32,6 +32,8 @@ def save_circle(base, out_path, size, fmt='PNG', **kwargs):
 save_circle(canvas, os.path.join(pub, 'favicon-512.png'),      512, optimize=True, compress_level=9)
 save_circle(canvas, os.path.join(pub, 'favicon.png'),          512, optimize=True, compress_level=9)
 save_circle(canvas, os.path.join(pub, 'apple-touch-icon.png'), 180, optimize=True)
+save_circle(canvas, os.path.join(pub, 'favicon-48x48.png'),     48, optimize=True)
+save_circle(canvas, os.path.join(pub, 'favicon-96x96.png'),     96, optimize=True)
 save_circle(canvas, os.path.join(pub, 'favicon-32x32.png'),     32, optimize=True)
 save_circle(canvas, os.path.join(pub, 'favicon-16x16.png'),     16, optimize=True)
 
@@ -40,9 +42,7 @@ canvas.resize((512, 512), Image.LANCZOS).save(webp_path, 'WEBP', quality=85)
 print(f'  Saved favicon-512.webp: {os.path.getsize(webp_path):,} bytes')
 
 ico_path  = os.path.join(pub, 'favicon.ico')
-ico_sizes = [(16, 16), (32, 32), (48, 48)]
-ico_imgs  = [canvas.resize(s, Image.LANCZOS) for s in ico_sizes]
-ico_imgs[0].save(ico_path, format='ICO', sizes=ico_sizes, append_images=ico_imgs[1:])
+canvas.save(ico_path, format='ICO', sizes=[(16, 16), (32, 32), (48, 48)])
 print(f'  Saved favicon.ico: {os.path.getsize(ico_path):,} bytes')
 
 print('All done! No borders, just the original photo.')
