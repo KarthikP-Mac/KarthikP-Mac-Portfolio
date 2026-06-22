@@ -396,7 +396,15 @@ function App() {
                 <span className="skill-tag">React</span>
                 <span className="skill-tag">Angular</span>
                 <span className="skill-tag">Spring Boot</span>
+                <span className="skill-tag">FastAPI</span>
                 <span className="skill-tag">Flask</span>
+              </div>
+            </div>
+
+            <div className="glass-card skills-category reveal slide-in-left">
+              <h3><Icons.Terminal /> Desktop & GUI</h3>
+              <div className="skills-list">
+                <span className="skill-tag">Tkinter</span>
               </div>
             </div>
 
