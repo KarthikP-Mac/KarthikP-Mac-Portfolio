@@ -401,13 +401,6 @@ function App() {
               </div>
             </div>
 
-            <div className="glass-card skills-category reveal slide-in-left">
-              <h3><Icons.Terminal /> Desktop & GUI</h3>
-              <div className="skills-list">
-                <span className="skill-tag">Tkinter</span>
-              </div>
-            </div>
-
             <div className="glass-card skills-category reveal slide-in-right">
               <h3><Icons.Database /> Databases & DevTools</h3>
               <div className="skills-list">
@@ -430,6 +423,13 @@ function App() {
                 <span className="skill-tag">Vercel</span>
                 <span className="skill-tag">Render</span>
                 <span className="skill-tag">JWT Security</span>
+              </div>
+            </div>
+            
+            <div className="glass-card skills-category reveal slide-in-left">
+              <h3><Icons.Terminal /> Desktop & GUI</h3>
+              <div className="skills-list">
+                <span className="skill-tag">Tkinter</span>
               </div>
             </div>
           </div>
