@@ -316,6 +316,7 @@ function App() {
               <li><span className="nav-link" onClick={() => scrollIntoView('projects')}>Projects</span></li>
               <li><span className="nav-link" onClick={() => scrollIntoView('education')}>Education</span></li>
               <li><span className="nav-link" onClick={() => scrollIntoView('contact')}>Contact</span></li>
+              <li><a className="nav-link" href="https://htmlpreview.github.io/?https://github.com/KarthikP-Mac/KarthikP-Mac/blob/main/Karthik_Potti_Resume.html" target="_blank" rel="noopener noreferrer">Resume</a></li>
             </ul>
           </nav>
 
