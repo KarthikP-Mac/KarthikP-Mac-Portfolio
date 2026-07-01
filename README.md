@@ -59,41 +59,44 @@ Dedicated Full Stack Developer and AI/Automation Engineer with 4 years of experi
 ### **GenAI & RAG Applications**
 
 #### **BFSI-Insurance-Ai-Agent (Banking AI Copilot) [Public]**
-*Tech: Python, Streamlit, LangChain, CRag, FAISS, Hugging Face Embeddings, Groq/Gemini/OpenAI/Claude*
+*Tech: Python, Streamlit, LangChain, CRAG, FAISS Vector DB, Hugging Face Embeddings, Groq (Active: Llama-4 Scout 17B | Fallbacks: Llama-3.3-70b · Llama-3.1-8b · Qwen-3), Gemini, OpenAI, Claude*
 *   **Live Demo:** [karthikp-mac-banking-ai-copilot.hf.space](https://karthikp-mac-banking-ai-copilot.hf.space/)
-*   Developed a domain-specific financial AI assistant that answers banking-related queries.
-*   Built a robust Corrective Retrieval-Augmented Generation (CRAG) pipeline utilizing custom recursive text splitters, FAISS vector database, multi-LLMs.
+*   An intelligent finance & banking AI assistant that answers domain-specific queries.
+*   Leverages a robust **CRAG** pipeline with a custom recursive character splitter, **FAISS vector database**, and a **Multi-Model LLM Orchestration** architecture — configured with **Llama-4 Scout 17B** (meta-llama/llama-4-scout-17b-16e-instruct) as the active primary reasoning engine, with dynamic hot-swapping fallback routing across Llama-3.3-70b, Llama-3.1-8b, and Qwen-3 to manage token limits and optimize cost per query.
 
 #### **Jarvis AI Assistant (Voice-Activated Assistant) [Public]**
-*Tech: React, FastAPI, Python, WebSockets, Groq, ONNX Runtime (Kokoro-ONNX), ElevenLabs, Docker, Hugging Face*
+*Tech: React, FastAPI, Python, WebSockets, Groq, ONNX Runtime (Kokoro-ONNX), ElevenLabs, Docker, Hugging Face Spaces*
 *   **Live Demo:** [karthikp-mac-jarvis-ai-assistant.hf.space](https://karthikp-mac-jarvis-ai-assistant.hf.space/)
-*   Engineered a real-time voice assistant with a Cyberpunk React UI and a FastAPI WebSocket server for duplex raw audio streaming.
-*   Integrated Groq (Whisper/Llama) for STT/reasoning, ElevenLabs & Kokoro-ONNX for cloud/local TTS, and safety filters using Guardrails, deployed via Docker.
-<!-- *   ![Jarvis AI Assistant Preview](assets/jarvis_ai_assistant.png) -->
+*   A real-time, **Multimodal Voice-to-Voice AI Assistant** featuring dynamic location/timezone-aware greeting generation, dual-engine Text-to-Speech (TTS) synthesis, and high-performance bidirectional WebSocket communication.
+    *   *Frontend:* Built with React.js (Vite), Vanilla CSS (Cyberpunk/Sci-Fi UI theme with active/inactive neon state cues), Web Audio API (AudioContext, AnalyserNode, GainNode for real-time frequency waveforms and chime synthesis), and the Web Speech API (webkitSpeechRecognition) for local background wake-word triggers.
+    *   *Backend:* FastAPI ASGI server utilizing bidirectional WebSockets for high-frequency duplex streaming of raw audio packets and system configs.
+    *   *AI Models (STT & Multi-LLM):* Powered by Groq API — Whisper-large-v3-turbo for rapid Speech-to-Text and a **Multi-Model LLM Routing Layer** selecting between **Llama-4 Scout 17B** (active primary model · 500K TPD · best quality/throughput ratio), **Llama-3.3-70b-versatile** (high-quality reasoning · 100K TPD), and **Llama-3.1-8b-instant** (ultra-low latency · 500K TPD) for agent reasoning, timezone-aware localized queries, and function-calling routing.
+    *   *Text-to-Speech (TTS):* Dual-engine pipeline: Cloud/Premium (ElevenLabs API for voice streaming) and Local/Free (kokoro-onnx==0.3.4 and ONNX Runtime for in-memory offline English voice synthesis), with browser-native speech synthesis as a fallback for multi-lingual accents (Hindi & Telugu).
+    *   *Safety & Infrastructure:* Double-layered regex guardrail filter running on the FastAPI server to block explicit or unsafe URLs and queries before LLM invocation. Deployed as a monolithic container on Hugging Face Spaces via Docker.
 
 ### **Real-Time Web Applications**
 
 #### **Web-RTC (Live Random Video Calls) [Public]**
-*Tech: React, WebRTC APIs, Spring Boot, WebSocket, Render*
+*Tech: React, WebRTC APIs, Spring Boot, Java Virtual Threads (Project Loom), WebSocket (Signaling), Render*
 *   **Live Demo:** [web-rtc-lq00.onrender.com](https://web-rtc-lq00.onrender.com/)
-*   Developed a Zoom-like web application supporting peer-to-peer video calls, screen-sharing, signaling handling, and media controls.
+*   Developed a peer-to-peer video conferencing application supporting live video/audio streams, screen sharing, and adaptive signaling. Backend built with **Java Virtual Threads** (Project Loom) for high-concurrency, low-latency signaling coordination, deployed as a **monolithic Docker** container on Render.
 
 #### **Web-Sockets (Live Chats) [Public]**
-*Tech: Angular, Spring Boot, WebSocket (STOMP), Render*
+*Tech: Angular, Spring Boot, WebSocket (STOMP), Docker, Render*
 *   **Live Demo:** [web-sockets-ju5x.onrender.com](https://web-sockets-ju5x.onrender.com/)
-*   Built a real-time messaging service ensuring reliable end-to-end delivery of chat messages with active connection tracking.
+*   Built a real-time instant messaging service with persistent connection tracking and **STOMP**-based WebSocket messaging, deployed as a **monolithic Docker** container on Render — ensuring reliable end-to-end delivery of chat messages at scale.
 
 #### **Sticky-Notes [Public]**
-*Tech: React 19, PWA (Progressive Web App), Firebase Firestore, LocalStorage, CSS3, Lucide React, Vercel*
+*Tech: React 19, PWA (Progressive Web App), Firebase Firestore, Firebase Auth (Google OAuth2), LocalStorage, CSS3, Lucide React, Vercel*
 *   **Live Demo:** [stickynotes-pk-mac.vercel.app](https://stickynotes-pk-mac.vercel.app/)
 *   Engineered a Progressive Web App (PWA) digital board featuring multi-modal layout views (Interactive Corkboard Canvas and Kanban Grid View) to organize and manage task notes.
-*   Implemented custom drag-and-drop operations for priorities sorting, tag category assignments, and a trash bin deletion system.
+*   Implemented custom drag-and-drop operations for priorities sorting, tag category assignments, and a trash bin deletion system with Firebase Auth Google OAuth2 sign-in.
 *   Configured Firebase Firestore offline caching with a multi-tab synchronization manager to ensure data persistence and reliable real-time updates.
 
-### **Institutional Web Portals**
+### **Institution Web Portals**
 
 #### **Adarsh Computers Portal (React & ExpressNode) [Private]**
-*Tech: React, Node.js, Express, Bootstrap, SMTP, Vercel, Render*
+*Tech: React, Node.js, Express.js, Bootstrap, SMTP, Vercel, Render*
 *   **Live Website:** [adarsh-computers.vercel.app](https://adarsh-computers.vercel.app/)
 *   Contributed to the full stack development of an institute portal. Designed responsive interfaces in React (Frontend) and created robust services in Express/Node (Backend) to handle courses, student registrations, announcements, and online quizzes.
 
@@ -104,16 +107,21 @@ Dedicated Full Stack Developer and AI/Automation Engineer with 4 years of experi
 ### **Python Tkinter Desktop & Portable Software**
 
 #### **Smart_Stocker**
-*Tech: Python, Tkinter*
-*   Developed a portable desktop ledger application for business inventory tracking and financial accounting.
+*Tech: Python, Tkinter, SQLite3, Excel (openpyxl), SMTP, Matplotlib, AI Bot, JSON*
+*   Designed a standalone desktop ERP and ledger system using **Python (Tkinter)** and **SQLite3**, featuring local data caching, asynchronous background auto-saves, and Matplotlib-based analytics dashboards.
+*   Implemented an automated stock advisory module providing real-time stock alert thresholds (yellow/red warnings) and predictive profit forecasting.
+*   Integrated secure PDF document compilation for automated generation of invoices, purchase orders, and monthly ledger sheets.
 
 #### **Python-Pdf**
-*Tech: Python, Tkinter, OS APIs*
-*   Built a desktop utility for batch PDF creation via folder selection, extracting text content, and exporting embedded images by selecting custom ranges.
+*Tech: Python, Tkinter, PyPDF, Pillow, OS APIs, File Automation*
+*   Engineered a desktop utility using **Python (Tkinter)** to batch convert entire folders of images into high-quality, compressed PDFs with a live progress renderer.
+*   Supports custom page and image ordering with a **live sequence preview** (allowing interactive drag-and-drop or button-based reordering) before exporting the final PDF.
+*   Implemented selective page extraction (e.g., picking 2 of 10 pages) and image-only extraction from existing PDF documents.
 
 #### **Auto_Power_Off_Timer**
-*Tech: Python, Tkinter, Windows OS APIs*
-*   Created a utility software that schedules PC power events (sleep, restart, shutdown) dynamically or based on custom timers.
+*Tech: Python, Tkinter, Windows OS APIs, JSON, Task Scheduling*
+*   Developed a desktop power automation tool in **Python (Tkinter)** that schedules system events (shutdown, sleep, lock) via countdown timers and persistent daily schedules saved in JSON.
+*   Implemented a system-overlay countdown notification in the final 5 minutes of a scheduled event, with password-protected controls to cancel timers, edit tasks, or exit.ased on custom timers.
 
 ### **Other Projects**
 

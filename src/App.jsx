@@ -99,8 +99,8 @@ const mainProjects = [
     title: 'BFSI Banking AI Copilot',
     category: 'genai',
     image: bankingCopilotPreview,
-    tech: ['Python', 'LangChain', 'CRAG', 'FAISS', 'Streamlit', 'HuggingFace', 'Multi-LLM (Groq | Gemini | Claude | OpenAI)'],
-    description: 'Developed a domain-specific financial AI assistant that answers banking-related queries using a robust corrective retrieval-augmented generation (CRAG) pipeline with custom recursive text splitters.',
+    tech: ['Python', 'LangChain', 'CRAG', 'FAISS Vector DB', 'Streamlit', 'Hugging Face', 'Multi-Model LLM Orchestration (Groq | Llama-4 Scout 17B)'],
+    description: 'Developed a domain-specific financial AI assistant using a robust Corrective RAG (CRAG) pipeline, FAISS vector database, and a Multi-Model LLM Orchestration architecture — configured with Llama-4 Scout 17B as the active primary reasoning engine, with dynamic hot-swapping fallback routing across Llama-3.3-70b, Llama-3.1-8b, and Qwen-3 to manage token limits and optimize cost per query.',
     demo: 'https://karthikp-mac-banking-ai-copilot.hf.space/',
     code: 'https://github.com/KarthikP-Mac/BFSI-Insurance-Ai-Agent'
   },
@@ -109,8 +109,8 @@ const mainProjects = [
     title: 'Jarvis AI Assistant',
     category: 'genai',
     image: jarvisPreview,
-    tech: ['React', 'FastAPI', 'Python', 'WebSockets', 'Groq', 'Kokoro-ONNX', 'ElevenLabs', 'Docker', 'HuggingFace'],
-    description: 'Engineered a real-time, voice-activated assistant with a Cyberpunk React UI and a FastAPI WebSocket server for duplex audio streaming, integrating Whisper STT and local Kokoro-ONNX for fast TTS.',
+    tech: ['Vite + React', 'FastAPI', 'Python', 'WebSockets', 'Groq (Whisper | Llama-4 Scout)', 'ONNX Runtime (Kokoro-ONNX)', 'ElevenLabs', 'Docker', 'Hugging Face Spaces'],
+    description: 'Engineered a real-time, Multimodal Voice-to-Voice AI Assistant featuring a cyberpunk React UI and a FastAPI WebSocket server for duplex audio streaming. Integrated a dual-engine speech synthesis pipeline (ElevenLabs & local Kokoro-ONNX) and a Multi-Model LLM Routing Layer (Groq API / Llama-4 Scout 17B) with regex safety guardrails.',
     demo: 'https://karthikp-mac-jarvis-ai-assistant.hf.space/',
     code: 'https://github.com/KarthikP-Mac/Jarvis-AI-Assistant'
   },
@@ -119,8 +119,8 @@ const mainProjects = [
     title: 'Sticky-Notes Board',
     category: 'fullstack',
     image: stickynotesPreview,
-    tech: ['React 19', 'PWA', 'Firebase Firestore', 'Offline Caching', 'Lucide React', 'Vercel'],
-    description: 'Progressive Web App digital board with a Corkboard Canvas and Kanban Grid, custom drag-and-drop operations, secure tag category assignments, and multi-tab synchronization.',
+    tech: ['React 19', 'Vite', 'PWA', 'Firebase Firestore', 'Firebase Auth (Google OAuth2)', 'LocalStorage', 'CSS3', 'Vercel'],
+    description: 'Engineered a Progressive Web App (PWA) digital corkboard and kanban board with Google OAuth2 sign-in via Firebase Auth, custom drag-and-drop mechanics, coordinate persistence, tag categorization, and a multi-tab Firebase Firestore offline sync manager.',
     demo: 'https://stickynotes-pk-mac.vercel.app/',
     code: 'https://github.com/KarthikP-Mac/sticky-notes'
   },
@@ -129,8 +129,8 @@ const mainProjects = [
     title: 'Web-RTC Video Calls',
     category: 'fullstack',
     image: webrtcPreview,
-    tech: ['React', 'WebRTC APIs', 'Spring Boot', 'Java Virtual Threads (Loom)', 'WebSocket', 'Docker', 'Render'],
-    description: 'Peer-to-peer video conferencing app with live screen-sharing, adaptive signaling, and media controls. Backend powered by Java Virtual Threads (Project Loom) for high-concurrency signaling, deployed as a monolithic Docker container on Render.',
+    tech: ['React', 'WebRTC APIs', 'Spring Boot', 'Java Virtual Threads (Project Loom)', 'WebSocket (Signaling)', 'Docker', 'Render'],
+    description: 'Developed a peer-to-peer video conferencing application supporting live video/audio streams, screen sharing, and adaptive signaling. Backend built with Java Virtual Threads (Project Loom) for high-concurrency, low-latency signaling coordination, deployed as a monolithic Docker container on Render.',
     demo: 'https://web-rtc-lq00.onrender.com/',
     code: 'https://github.com/KarthikP-Mac/Web-RTC'
   },
@@ -139,8 +139,8 @@ const mainProjects = [
     title: 'Web-Sockets Live Chats',
     category: 'fullstack',
     image: websocketsPreview,
-    tech: ['Angular', 'TypeScript', 'Spring Boot', 'WebSocket STOMP', 'Docker', 'Render'],
-    description: 'Real-time instant messaging service with STOMP-based WebSocket messaging, persistent connection tracking, and reliable end-to-end chat delivery — deployed as a monolithic Docker container on Render.',
+    tech: ['Angular', 'TypeScript', 'Spring Boot', 'WebSocket (STOMP)', 'Docker', 'Render'],
+    description: 'Built a real-time instant messaging service with persistent connection tracking and STOMP-based WebSocket messaging, deployed as a monolithic Docker container on Render — ensuring reliable end-to-end delivery of chat messages at scale.',
     demo: 'https://web-sockets-ju5x.onrender.com/',
     code: 'https://github.com/KarthikP-Mac/Web-Sockets'
   },
@@ -149,8 +149,8 @@ const mainProjects = [
     title: 'Institution Web Portal',
     category: 'fullstack',
     image: institutePreview,
-    tech: ['React', 'Node.js', 'Express', 'Bootstrap', 'SMTP Server', 'Vercel', 'Render'],
-    description: 'Contributed to full stack development of Adarsh Computers Portal. Manages courses, registrations, announcements, and conducts interactive student quizzes.',
+    tech: ['React', 'Node.js', 'Express.js', 'Bootstrap', 'SMTP', 'Vercel', 'Render'],
+    description: 'Contributed to the full stack development of Adarsh Computers Portal. Designed responsive React frontend and robust Express/Node.js backend to manage courses, student registrations, announcements, and online quizzes.',
     demo: 'https://adarsh-computers.vercel.app/',
     code: 'https://github.com/KarthikP-Mac'
   },
@@ -159,8 +159,8 @@ const mainProjects = [
     title: 'Smart Stocker Desktop',
     category: 'desktop',
     image: smartStockerPreview,
-    tech: ['Python', 'Tkinter', 'SQLite3', 'Excel (openpyxl)', 'SMTP', 'Matplotlib', 'JSON'],
-    description: 'Standalone desktop ERP and ledger system with an AI stock advisor bot, color-coded stock alerts, Matplotlib analytics dashboards, auto-save to SQLite3/JSON, Excel import/export, and automated PDF generation (invoices, purchase orders, monthly reports).',
+    tech: ['Python', 'Tkinter', 'SQLite3', 'Excel (openpyxl)', 'SMTP', 'Matplotlib', 'AI Bot', 'JSON'],
+    description: 'Designed a standalone desktop ERP and ledger system using Python (Tkinter) and SQLite3, featuring local data caching, asynchronous background auto-saves, and Matplotlib-based analytics dashboards. Implemented an automated stock advisory module with warning thresholds, predictive profit forecasting, and automated PDF document compilation (invoices, purchase orders, monthly reports).',
     demo: '',
     code: 'https://github.com/KarthikP-Mac/Smart_Stocker'
   },
@@ -170,7 +170,7 @@ const mainProjects = [
     category: 'desktop',
     image: pdfGeneratorPreview,
     tech: ['Python', 'Tkinter', 'PyPDF', 'Pillow', 'OS APIs', 'File Automation'],
-    description: 'Desktop utility to batch convert entire image folders to compressed PDFs with a live progress renderer. Supports custom page ordering with live sequence preview, selective page extraction from existing PDFs, and image-only extraction.',
+    description: 'Engineered a desktop utility using Python (Tkinter) to batch convert entire folders of images into high-quality, compressed PDFs with a live progress renderer. Supports custom page/image ordering with a live sequence preview, selective page extraction, and image-only extraction.',
     demo: '',
     code: 'https://github.com/KarthikP-Mac/Python-Pdf'
   },
@@ -180,7 +180,7 @@ const mainProjects = [
     category: 'desktop',
     image: customTimerPreview,
     tech: ['Python', 'Tkinter', 'Windows OS APIs', 'JSON', 'Task Scheduling'],
-    description: 'Desktop power automation tool that schedules system events (shutdown, sleep, lock) via countdown timers and persistent daily JSON schedules. Displays a system-overlay countdown in the final 5 minutes with password-protected controls.',
+    description: 'Developed a desktop power automation tool in Python (Tkinter) that schedules system events (shutdown, sleep, lock) via countdown timers and persistent daily JSON schedules. Displays a system-overlay countdown in the final 5 minutes with password-protected controls to cancel timers or edit tasks.',
     demo: '',
     code: 'https://github.com/KarthikP-Mac/Auto_Power_Off_Timer'
   }
@@ -378,9 +378,17 @@ function App() {
                 <span className="skill-tag">LangChain</span>
                 <span className="skill-tag">LangGraph</span>
                 <span className="skill-tag">AutoGen AI</span>
+                <span className="skill-tag">AI Agents</span>
                 <span className="skill-tag">RAG / CRAG</span>
                 <span className="skill-tag">FAISS Vector DB</span>
+                <span className="skill-tag">Azure RAG Index</span>
                 <span className="skill-tag">Prompt Engineering</span>
+                <span className="skill-tag">Groq API</span>
+                <span className="skill-tag">OpenAI API</span>
+                <span className="skill-tag">Gemini API</span>
+                <span className="skill-tag">Claude API</span>
+                <span className="skill-tag">ElevenLabs</span>
+                <span className="skill-tag">ONNX Runtime (Kokoro)</span>
                 <span className="skill-tag">Azure OCR</span>
                 <span className="skill-tag">Genesys PureCloud</span>
                 <span className="skill-tag">Microsoft Logic Apps</span>
@@ -399,10 +407,19 @@ function App() {
                 <span className="skill-tag">React</span>
                 <span className="skill-tag">Angular</span>
                 <span className="skill-tag">Angular Material</span>
+                <span className="skill-tag">Vite</span>
+                <span className="skill-tag">Bootstrap</span>
+                <span className="skill-tag">jQuery</span>
+                <span className="skill-tag">PWA</span>
+                <span className="skill-tag">Font Awesome</span>
                 <span className="skill-tag">Spring Boot</span>
                 <span className="skill-tag">FastAPI</span>
                 <span className="skill-tag">Flask</span>
                 <span className="skill-tag">Node.js</span>
+                <span className="skill-tag">Express.js</span>
+                <span className="skill-tag">REST APIs</span>
+                <span className="skill-tag">WebSocket</span>
+                <span className="skill-tag">Microservices</span>
               </div>
             </div>
 
@@ -412,23 +429,28 @@ function App() {
                 <span className="skill-tag">Oracle SQL</span>
                 <span className="skill-tag">MySQL</span>
                 <span className="skill-tag">MongoDB</span>
+                <span className="skill-tag">Firebase Firestore</span>
                 <span className="skill-tag">Git & GitHub</span>
                 <span className="skill-tag">Postman</span>
                 <span className="skill-tag">Maven</span>
                 <span className="skill-tag">Linux / WinSCP</span>
+                <span className="skill-tag">Power BI</span>
+                <span className="skill-tag">Veracode</span>
               </div>
             </div>
 
             <div className="glass-card skills-category reveal scale-up">
               <h3><Icons.Cloud /> DevOps & Cloud</h3>
               <div className="skills-list">
-                <span className="skill-tag">Azure DevOps</span>
-                <span className="skill-tag">Azure Kubernetes (AKS)</span>
-                <span className="skill-tag">GitHub CI/CD</span>
+                <span className="skill-tag">Azure DevOps (CI/CD)</span>
                 <span className="skill-tag">Docker</span>
+                <span className="skill-tag">Azure Kubernetes (AKS)</span>
+                <span className="skill-tag">GitHub Actions</span>
                 <span className="skill-tag">Vercel</span>
                 <span className="skill-tag">Render</span>
-                <span className="skill-tag">JWT / RBAC</span>
+                <span className="skill-tag">Hugging Face Spaces</span>
+                <span className="skill-tag">JWT Auth</span>
+                <span className="skill-tag">RBAC</span>
                 <span className="skill-tag">OAuth2</span>
               </div>
             </div>
@@ -437,6 +459,7 @@ function App() {
               <h3><Icons.Terminal /> Desktop & GUI</h3>
               <div className="skills-list">
                 <span className="skill-tag">Tkinter</span>
+                <span className="skill-tag">Materialize CSS</span>
               </div>
             </div>
           </div>
@@ -462,12 +485,13 @@ function App() {
                 <span className="timeline-duration">Apr 2022 - Present</span>
               </div>
               <div className="glass-card timeline-card">
-                <h4 style={{ marginBottom: '0.75rem', color: 'hsl(var(--primary))' }}>GenAI Project: Call Intelligence & Automation</h4>
+                <h4 style={{ marginBottom: '0.75rem', color: 'hsl(var(--primary))' }}>GenAI Project: Upsell, Cross-Sell & Operational Call Intelligence</h4>
                 <ul className="timeline-details">
-                  <li>Architected end-to-end GenAI pipelines to extract and analyze <strong>7,000–9,000 daily call transcripts</strong> from Genesys PureCloud into SQL using Python, LangChain, and RAG — improving throughput by 40%.</li>
-                  <li>Automated multi-step report generation and stakeholder distribution via AutoGen multi-agent workflows and Microsoft Logic Apps, saving 15+ manual hours/week.</li>
-                  <li>Built a Python OCR automation service (Azure OCR) reducing document processing time by 80% and increasing accuracy to 99%.</li>
-                  <li>Engineered a React frontend and Flask REST API backend with embedded Power BI dashboards, enhancing decision-making efficiency by 30%.</li>
+                  <li>Architected and deployed end-to-end <strong>Generative AI pipelines</strong> using <strong>Python</strong>, <strong>LangChain</strong>, and <strong>RAG</strong> to extract and analyze <strong>7,000–9,000 daily call recording transcripts</strong> from <strong>Genesys PureCloud</strong> into SQL, surfacing upsell/cross-sell client insights at scale and improving data processing throughput by 40%.</li>
+                  <li>Automated multi-step report generation and stakeholder distribution using <strong>AutoGen</strong> multi-agent workflows and <strong>Microsoft Logic Apps</strong>, saving 15+ manual hours per week.</li>
+                  <li>Designed and implemented a <strong>Python-based OCR automation service</strong> (Azure OCR) that parsed and processed user-uploaded PDFs, reducing document processing time by 80% and increasing data extraction accuracy to 99%.</li>
+                  <li>Engineered a responsive <strong>React</strong> frontend and <strong>Flask</strong> REST API backend, integrating embedded <strong>Power BI</strong> dashboards to deliver real-time operational insights, enhancing decision-making efficiency by 30%.</li>
+                  <li>Collaborated with cross-functional product teams to integrate AI pipelines into enterprise BFSI core services, boosting client engagement by 15% and ensuring seamless cross-system compatibility.</li>
                 </ul>
               </div>
             </div>
@@ -485,10 +509,10 @@ function App() {
               <div className="glass-card timeline-card">
                 <h4 style={{ marginBottom: '0.75rem', color: 'hsl(var(--primary))' }}>Java Project: Latte Rewrite & ACH Integration</h4>
                 <ul className="timeline-details">
-                  <li>Developed financial backend services in Java Spring Boot and Angular (Angular Material / TypeScript) within a monolithic application architecture for ACH integrations with Bank of America — processing $10M+ in quarterly transactions.</li>
-                  <li>Engineered a custom multi-window modal manager in Angular mimicking Windows Explorer desktop OS behavior, dynamically orchestrating z-index depth for complex financial workflows.</li>
-                  <li>Orchestrated vulnerability remediations across 100+ REST APIs, centralizing patches into a reusable Maven JAR — achieving 100% Veracode compliance across 10+ microservices.</li>
-                  <li>Managed Linux batch automation jobs with shell scripting and WinSCP, achieving 99.9% pipeline reliability.</li>
+                  <li>Developed high-throughput financial backend services using <strong>Java Spring Boot</strong> and dynamic UIs in <strong>Angular</strong> (<strong>Angular Material</strong> / <strong>TypeScript</strong>) within a <strong>monolithic application</strong> architecture for ACH payment integrations with Bank of America, securely processing $10M+ in quarterly transactions.</li>
+                  <li>Engineered a custom multi-window modal manager in <strong>Angular</strong> mimicking Windows Explorer desktop OS behavior — dynamically orchestrating z-index depth to bring active popups to foreground and stack inactive ones, improving UX for complex financial workflows.</li>
+                  <li>Orchestrated vulnerability remediations across 100+ critical financial REST APIs, centralizing security patches into a reusable <strong>Maven JAR</strong> artifact — achieving consistent compliance across 10+ microservices and reducing duplicate remediation effort by ~60%.</li>
+                  <li>Managed background automation batch jobs in a <strong>Linux</strong> environment, utilizing shell scripting and <strong>WinSCP</strong> for secure file transfers, achieving 99.9% pipeline reliability.</li>
                 </ul>
               </div>
             </div>
@@ -506,10 +530,12 @@ function App() {
               <div className="glass-card timeline-card">
                 <h4 style={{ marginBottom: '0.75rem', color: 'hsl(var(--primary))' }}>Security Compliance & Delivery Automation</h4>
                 <ul className="timeline-details">
-                  <li>Developed and maintained Angular (Angular Material / TypeScript) and React component libraries alongside REST APIs in Spring Boot and Flask — reducing UI development cycles by 35%.</li>
-                  <li>Designed secure APIs and UI flows using JWT authentication and RBAC, achieving 100% pass rate in all internal security audits.</li>
-                  <li>Optimized CI/CD pipelines in Azure DevOps, slashing manual deployment overhead by 70% and increasing release frequency by 3x.</li>
-                  <li>Implemented centralized logging via Azure Kubernetes Service (AKS) monitoring, reducing MTTR by 45% across distributed microservices. Owned end-to-end system design across UI/UX, REST APIs, DB schemas, and cloud infrastructure.</li>
+                  <li>Developed and maintained <strong>Angular</strong> (<strong>Angular Material</strong> / <strong>TypeScript</strong>) and <strong>React</strong> component libraries alongside RESTful APIs using <strong>Spring Boot</strong> and <strong>Flask</strong>, reducing UI development cycles by 35% and enabling seamless UI–backend integration across multiple enterprise applications.</li>
+                  <li>Resolved 100+ application security vulnerabilities as part of Equitable's Vulnerability Remediation Team, achieving full compliance in <strong>Veracode</strong> security scans and internal audits.</li>
+                  <li>Designed secure REST APIs and UI flows using <strong>JWT-based authentication</strong> and <strong>role-based authorization (RBAC)</strong>, achieving 100% pass rate in all internal security compliance audits.</li>
+                  <li>Optimized <strong>CI/CD pipelines</strong> in <strong>Azure DevOps</strong>, slashing manual deployment overhead by <strong>70%</strong> and increasing release frequency by 3x.</li>
+                  <li>Implemented centralized logging and observability using <strong>Azure Kubernetes Service (AKS)</strong> monitoring and loggers, reducing Mean Time to Resolution (MTTR) by 45% across distributed <strong>microservices</strong>.</li>
+                  <li>Owned end-to-end <strong>system design</strong> across multiple enterprise applications — architecting UI/UX layouts, REST API contracts, database schemas, GitHub Actions workflows, Azure Kubernetes clusters, and AI pipeline service integrations from requirements to production deployment.</li>
                 </ul>
               </div>
             </div>
