@@ -2,16 +2,16 @@ import { useState, useEffect, useRef } from 'react';
 import './App.css';
 
 // Import Assets
-import bankingCopilotPreview from './assets/banking_copilot_preview.png';
-import jarvisPreview from './assets/jarvis_ai_assistant.png';
-import stickynotesPreview from './assets/stickynotes.png';
-import webrtcPreview from './assets/webrtc_preview.png';
-import websocketsPreview from './assets/websockets_preview.png';
-import smartStockerPreview from './assets/smart_stocker.png';
-import customTimerPreview from './assets/custom_timer.png';
-import pdfGeneratorPreview from './assets/pdf_generator.png';
-import institutePreview from './assets/institute_preview.png';
-import karthikProfile from './assets/karthik_profile.png';
+import bankingCopilotPreview from './assets/banking_copilot_preview.webp';
+import jarvisPreview from './assets/jarvis_ai_assistant.webp';
+import stickynotesPreview from './assets/stickynotes.webp';
+import webrtcPreview from './assets/webrtc_preview.webp';
+import websocketsPreview from './assets/websockets_preview.webp';
+import smartStockerPreview from './assets/smart_stocker.webp';
+import customTimerPreview from './assets/custom_timer.webp';
+import pdfGeneratorPreview from './assets/pdf_generator.webp';
+import institutePreview from './assets/institute_preview.webp';
+import karthikProfile from './assets/karthik_profile.webp';
 
 const Icons = {
   Phone: () => (
